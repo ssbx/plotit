@@ -1,0 +1,12 @@
+#
+set title "Crossmatch perfs"
+set xlabel "Catalogs Herve"
+set ylabel "CPU time (seconds)"
+set grid
+set style line 1 lc rgb '#729fcf' lt 1 lw 2 pt 7 ps 1.5
+set style line 2 lc rgb '#73d216' lt 1 lw 2 pt 7 ps 1.5
+set style line 3 lc rgb '#cc0000' lt 1 lw 2 pt 7 ps 1.5
+set style line 4 lc rgb '#cccccc' lt 1 lw 2 pt 7 ps 1.5
+
+set linetype 1 dt 2
+plot "data.perf" using 6:3 title "Crossmatch Only (new version)" with linespoints ls 2, "data.perf" using 6:5 title "Crossmatch Only with data locality (new version)" with linespoints ls 4;

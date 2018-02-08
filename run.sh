@@ -1,0 +1,4 @@
+#!/bin/sh
+
+gnuplot -p "plot.wide"
+gnuplot -p "plot.minimal"
