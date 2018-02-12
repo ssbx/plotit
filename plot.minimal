@@ -10,4 +10,4 @@ set style line 4 lc rgb '#cccccc' lt 1 lw 2 pt 7 ps 1.5
 set style line 5 lc rgb '#000000' lt 1 lw 2 pt 7 ps 1.5
 
 set linetype 1 dt 2
-plot "data.perf" using 7:3 title "Crossmatch Only (new version)" with linespoints ls 2, "data.perf" using 7:5 title "Crossmatch Only with data locality (new version)" with linespoints ls 4, "data.perf" using 7:6 title "pthread 28" with linespoints ls 5;
+plot "data.perf" using 7:3 title "Crossmatch Only" with linespoints ls 2, "data.perf" using 7:5 title "Crossmatch Only with data locality" with linespoints ls 4, "data.perf" using 7:6 title "Crossmatch Only with data locality and 28 threads" with linespoints ls 5;
