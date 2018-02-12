@@ -7,6 +7,6 @@ set style line 1 lc rgb '#729fcf' lt 1 lw 2 pt 7 ps 1.5
 set style line 2 lc rgb '#73d216' lt 1 lw 2 pt 7 ps 1.5
 set style line 3 lc rgb '#cc0000' lt 1 lw 2 pt 7 ps 1.5
 set style line 4 lc rgb '#cccccc' lt 1 lw 2 pt 7 ps 1.5
+set style line 5 lc rgb '#000000' lt 1 lw 2 pt 7 ps 1.5
 
-#set linetype 1 dt 2
-plot "data.perf" using 6:2 title "Total Time (new version)" with linespoints ls 1, "data.perf" using 6:3 title "Crossmatch Only (new version)" with linespoints ls 2, "data.perf" using 6:4 title "Crossmatch only (old version)" with linespoints ls 3, "data.perf" using 6:5 title "Crossmatch only with locality" with linespoints ls 4;
+plot "data.perf" using 7:2 title "Total Time (new version)" with linespoints ls 1, "data.perf" using 7:3 title "Crossmatch Only (new version)" with linespoints ls 2, "data.perf" using 7:4 title "Crossmatch only (old version)" with linespoints ls 3, "data.perf" using 7:5 title "Crossmatch only with locality" with linespoints ls 4, "data.perf" using 7:6 title "pthread 28" with linespoints ls 5;
